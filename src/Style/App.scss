@@ -1,0 +1,236 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.Search-bar{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input{
+        width: 40%;
+        height: 2.5rem;
+        padding: 0.5rem;
+        border: none;
+        border: 1px solid rgb(0,0,0, 0.699);
+        border-radius: 5px;
+        font-size: 1.30rem;
+        outline: none;
+    }
+}
+.user{
+    width: 100vw;
+  
+
+    .user-div{
+    display: flex;
+    height: 30rem;
+    align-items: center;
+   justify-content: center;
+   border: 2px solid rgb(120, 118, 118);
+   margin:0rem 2rem;
+
+    
+       div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:0rem 2rem;
+       
+        
+            img{
+                width: 14rem;
+                height: 14rem;
+                border-radius: 50%;
+                border: 1px solid rgb(96, 96, 246);
+    
+    
+            }
+          
+        
+       
+        >a{
+          margin-top: 1rem;
+          text-decoration: none;
+          color: rgb(120, 118, 118);
+          transition: all 0.3s ease-in-out;
+          &:hover{
+            color: rgb(95, 95, 255);
+          }
+        }
+
+        h4{
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        p{
+            font-size: 1.10rem;
+            line-height: normal;
+            font-family: sans-serif;
+            margin-bottom: 1rem;
+            svg{
+                margin-right: 0.5rem;
+            }
+            a{
+                text-decoration: none;
+                color: rgb(120, 118, 118);
+                transition: all 0.3s ease-in-out;
+          &:hover{
+            color: rgb(95, 95, 255);
+          }
+            }
+
+        }
+    }
+}
+}
+
+
+.repo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  
+
+    .repoBox{
+     width: 40%;
+     height: 12rem;
+     display: flex;
+     flex-direction: column;
+     padding: 0.5rem;
+     border: 1px solid black;
+     margin: 1rem;
+
+     h4{
+        font-size: 1.30rem;
+        color: rgb(50, 50, 189);
+        margin: 0.5rem 0rem;
+     }
+     P{
+        font-size: 1rem;
+        margin: 0.5rem 0rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     }
+     span{
+        margin-top: 1rem;
+        width: 6rem;
+        height: 4rem;
+        background-color: rgb(96, 96, 246);
+        padding: 0.5rem;
+        border-radius: 5px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 0.9rem;
+     }
+    }
+}
+
+.loader{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading{
+    width: 10rem;
+    height: 10rem;
+    border-bottom: 5px solid rgb(120, 118, 118);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+  .pagination{
+    width: 100%;
+    height: 5rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     span{
+        width: 4rem;
+        height: 3rem;
+     
+         text-align: center;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+          border: 1px solid rgba(0,0,0,0.566);
+          cursor: pointer;
+         
+     }
+  }
+
+  .active{
+    background-color: rgb(104, 104, 255);
+    color: white;
+  }
+
+
+
+  @media only screen and (max-width: 600px) {
+    .Search-bar{
+        input{
+            width: 80%;
+        }
+    }
+    .user{
+        .user-div{
+           flex-direction: column;
+          div{
+            margin: 1rem;
+            h4{
+                margin-top: 0.5rem;
+                font-size: 1.30rem;
+            }
+          }
+        }
+    }
+    .repo{
+        .repoBox{
+            width: 80%;
+            height: 20rem;
+            padding:0.5rem;
+        }
+    }
+  }
+
+  @media only screen and (max-width: 1190px){
+
+    .Search-bar{
+        input{
+            width: 70%;
+            
+        }
+
+       
+
+
+    }
+    .repo{
+        .repoBox{
+            width: 80%;
+     
+            padding:0.5rem;
+        }
+    }
+
+  }
